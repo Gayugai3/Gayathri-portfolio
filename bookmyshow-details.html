@@ -80,58 +80,75 @@
       <section id="portfolio-details" class="portfolio-details">
         <div class="container">
           <div class="row gy-4">
-            <div class="col-lg-8">
+            <div class="col-lg-7">
               <div class="portfolio-details-slider swiper">
+                <h3>Screens</h3>
                 <div class="swiper-wrapper align-items-center">
                   <div class="swiper-slide">
-                    <img
-                      src="assets/img/portfolio/portfolio-details-1.jpg"
-                      alt=""
-                    />
+                    <img src="assets/img/portfolio/bk1.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/bka1.jpg" alt="" />
                   </div>
 
                   <div class="swiper-slide">
-                    <img
-                      src="assets/img/portfolio/portfolio-details-2.jpg"
-                      alt=""
-                    />
+                    <img src="assets/img/portfolio/bk4.jpg" alt="" />
                   </div>
 
                   <div class="swiper-slide">
-                    <img
-                      src="assets/img/portfolio/portfolio-details-3.jpg"
-                      alt=""
-                    />
+                    <img src="assets/img/portfolio/bk6.jpg" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/bkfg1.jpg" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/bkfg4.jpg" alt="" />
                   </div>
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-5">
               <div class="portfolio-info">
                 <h3>Project information</h3>
                 <ul>
                   <li><strong>Category</strong>: Webcode</li>
-                  <li>
-                    <strong>Project Title</strong>: Nationalize API using
-                    async/await with fetch.
-                  </li>
-                  <li><strong>Project date</strong>: 27 October, 2022</li>
+                  <li><strong>Project Title</strong>: Ticket Booking</li>
+                  <li><strong>Project date</strong>: 03 February, 2022</li>
                   <li>
                     <strong>Project Front-end Deployed URL</strong>:
                     <a
-                      href="https://loquacious-dolphin-c039b6.netlify.app/"
+                      href="https://superlative-blancmange-05b335.netlify.app
+                      "
                       target="_blank"
-                      >https://loquacious-dolphin-c039b6.netlify.app/</a
-                    >
+                      >https://superlative-blancmange-05b335.netlify.app
+                    </a>
                   </li>
                   <li>
                     <strong>Project Front-end Source code</strong>:
                     <a
-                      href="https://github.com/Gayugai3/Nationalize-API"
+                      href="https://github.com/Gayugai3/bookmyshow_FrontEnd"
                       target="_blank"
-                      >https://github.com/Gayugai3/Nationalize-API</a
+                      >https://github.com/Gayugai3/bookmyshow_FrontEnd</a
+                    >
+                  </li>
+                  <li>
+                    <strong>Project Back-end Deployed URL</strong>:
+                    <a
+                      href="https://bookmyshow-backend-fsuo.onrender.com"
+                      target="_blank"
+                      >https://bookmyshow-backend-fsuo.onrender.com</a
+                    >
+                  </li>
+                  <li>
+                    <strong>Project Back-end Source code</strong>:
+                    <a
+                      href="https://github.com/Gayugai3/bookmyshow-backend"
+                      target="_blank"
+                      >https://github.com/Gayugai3/bookmyshow-backend</a
                     >
                   </li>
                 </ul>
@@ -141,19 +158,57 @@
               <div class="portfolio-description">
                 <h2>Detailed Explanation about The Project</h2>
                 <ul>
-                  <li>All HTML elements are created using DOM</li>
                   <li>
-                    Used async/await and to handle errors try-catch is used
+                    Ticket booking is a process of selecting and making
+                    reservations for the cinema in a particular theatre via
+                    online.
                   </li>
+                  <ul>
+                    <li>Front-end: Reactjs</li>
+                    <li>Back-end: Nodejs</li>
+                    <li>Database: MongoDB</li>
+                  </ul>
                   <li>
-                    To get the data from Nationalize API, fetch() method is used
+                    This application contains, the Admin user and Client user.
                   </li>
-                  <li>Searched for the nationality based on the name.</li>
-                  <li>
-                    If you get the response back, display the top two country
-                    Codes and it's Probability value.
-                  </li>
-                  <li>All mandatory checks where also implemented</li>
+
+                  <ul>
+                    <li>Admin User</li>
+                    <ul>
+                      <li>Able to create/modify/delete theatres.</li>
+                      <li>
+                        The particular theatre contains a number of shows, and
+                        each show can only have 100 seats.
+                      </li>
+                      <li>
+                        Only Admin user are allowed to add films to the portal.
+                      </li>
+                      <li>
+                        Admin user can view the queries given by the clients.
+                      </li>
+                    </ul>
+                  </ul>
+
+                  <ul>
+                    <li>Client User</li>
+                    <ul>
+                      <li>
+                        Only Authenticated users are allowed to book shows.
+                      </li>
+                      <li>
+                        The users are allowed to select any number of seats.
+                      </li>
+                      <li>
+                        The Client user can request his queries to the admin
+                        user via the contact us page.
+                      </li>
+                      <li>
+                        Client users are secured with a log-in system with
+                        JWTtoken and OTP is sent to registered mail when trying
+                        to reset the password.
+                      </li>
+                    </ul>
+                  </ul>
                 </ul>
               </div>
             </div>
