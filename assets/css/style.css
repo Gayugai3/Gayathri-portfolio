@@ -594,7 +594,7 @@ section {
 }
 
 .about .image {
-  background: url("../img/me.jpg") center center no-repeat;
+  background: url("../img/me.JPG") center center no-repeat;
   background-size: cover;
   min-height: 500px;
 }
@@ -603,15 +603,27 @@ section {
   margin-top: 30px;
 }
 
-.skill .container .skills-content .skill-container .skill-icon {
-  height: 70px;
-  /* background-color: rgb(184, 190, 198); */
-  border-radius: 10px;
-}
 .skill .container .skills-content .skill-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px; /* Add some spacing between icons */
+}
+
+.skill .container .skills-content .skill-container .skill-icon {
+  height: 70px;
+  width: 70px; /* Ensure each icon has a square aspect ratio */
+  /* background-color: rgb(184, 190, 198); */
+  /* border-radius: 50%; Make the icons circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px; /* Adjust the font size as needed */
+  /* color: white; Set icon color */
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -677,6 +689,16 @@ section {
 /*--------------------------------------------------------------
 # My Portfolio
 --------------------------------------------------------------*/
+
+.row.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Horizontally center the items */
+  /* gap: 20px; Add spacing between items */
+}
+
+
+
 .portfolio #portfolio-flters {
   list-style: none;
   margin-bottom: 20px;
